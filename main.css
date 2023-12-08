@@ -166,12 +166,12 @@ p {
 
 .title-sm {
   font-family: var(--westmount);
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   line-height: 100%;
 }
 @media (min-width: 768px) {
   .title-sm {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
 }
 
@@ -267,6 +267,10 @@ p {
   color: var(--gold-skin);
 }
 
+.text-green {
+  color: var(--green);
+}
+
 .text-bone {
   color: var(--bone);
 }
@@ -354,8 +358,20 @@ a {
   height: 100svh;
 }
 
+.h-8 {
+  height: 32px;
+}
+
+.h-10 {
+  height: 40px;
+}
+
 .h-fit {
   height: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-fit {
@@ -481,8 +497,16 @@ a {
   max-width: 992px;
 }
 
+.max-w-xl {
+  max-width: 1200px;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.aspect-video {
+  aspect-ratio: 16/9;
 }
 
 .aspect-square {
@@ -541,6 +565,15 @@ z-10 {
 
 .border-gold {
   border-color: var(--gold-skin) !important;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .btn-primary {
@@ -635,7 +668,7 @@ nav {
     top: 0;
     left: -1000px;
     margin-left: 0;
-    height: 100svh;
+    height: 100vh;
     width: 100%;
     overflow-y: hidden;
     z-index: 1;
@@ -775,6 +808,10 @@ nav {
   #NavToggler {
     display: block;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero {
@@ -1201,6 +1238,9 @@ nav {
   box-shadow: 0 0 0 0.25rem rgba(163, 179, 154, 0.5);
 }
 
+.form-check-input {
+  margin-top: 0;
+}
 .form-check-input:checked {
   background-color: var(--blood);
   border-color: #430b08;
@@ -1256,6 +1296,99 @@ nav {
   color: black;
   padding: 0;
   width: fit-content;
+}
+
+.paket-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .paket-container {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.fieldset-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .fieldset-container {
+    flex-direction: row;
+  }
+}
+.fieldset-container fieldset {
+  flex: 1;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 35%;
+  padding: 8px;
+  border-right: 3px var(--bone);
+  border-right-style: double;
+}
+.input-legend legend {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+  .border-l-double {
+    border-left: 3px var(--bone);
+    border-left-style: double;
+  }
+}
+
+.radio-options {
+  width: 65%;
+  padding: 8px;
+}
+
+.option-item {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  height: 32px;
+  align-items: center;
+}
+
+.option-item > label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paket-carousel {
+  height: fit-content;
+}
+
+.pesan-whatsapp {
+  font-size: 28px;
+}
+.pesan-whatsapp img {
+  width: 32px;
+}
+
+.input-masakan-container {
+  display: flex;
+  border: 1px solid var(--bone);
+  padding: 6px;
+  gap: 4px;
+  align-items: center;
+}
+
+.img-carousel-aqiqah {
+  aspect-ratio: 16/10;
 }
 
 footer {
