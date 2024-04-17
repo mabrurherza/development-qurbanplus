@@ -395,6 +395,10 @@ a {
   height: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1353,6 +1357,20 @@ nav {
   box-shadow: 0 0 0 0.25rem rgba(106, 37, 30, 0.15);
 }
 
+.btn-check + .bayar-penuh {
+  border: 1px solid var(--lite-gray);
+  padding: 0.75rem 0.5rem;
+  color: var(--med-gray);
+}
+.btn-check + .bayar-penuh:hover {
+  background-color: var(--bone);
+}
+
+.btn-check:checked + .bayar-penuh {
+  outline: 2px solid var(--green);
+  background-color: #E8F4F0;
+}
+
 .accordion-item {
   border: none;
 }
@@ -1538,7 +1556,7 @@ nav {
 
 .content-container {
   border: 2px solid var(--bone);
-  border-color: transparent var(--bone) var(--bone) var(--bone);
+  border-color: transparent var(--bone);
 }
 @media (min-width: 768px) {
   .content-container {
